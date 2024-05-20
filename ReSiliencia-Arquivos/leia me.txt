@@ -1,0 +1,5 @@
+***leia_me.txt***
+
+Para testar as credenciais de login para entrar no sistema:
+Usuario: usuarioteste
+Senha: senhateste

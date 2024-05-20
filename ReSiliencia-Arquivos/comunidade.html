@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica,sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #C8E1F7;
+        }
+        .header {
+            width: 100%;
+            background-color: #ADD8E6;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            height: 100px;
+        }
+        .main-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #7FABD4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar a {
+            display: block;
+            color: #000;
+            padding: 5px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background-color: #7FABD4;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #C8E1F7;
+            padding: 25px;
+            margin-left: 1px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpeg" alt="Logomarca do Site">
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <a href="index.html">Página Inicial</a>
+            <a href="chatComPsicologos.html">Chat com Psicólogo(a)</a>
+            <a href="videosETextosEducativos.html">Vídeos e Textos Educativos</a>
+            <a href="ferramentasParaAutogerenciamentoEmocional.html">Autogerenciamento Emocional</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="clubeDoNeurodivergente.html">Clube do Neurodivergente</a>
+            <a href="telaLogin.html">Sair</a>
+        </div>
+        <div class="content">
+            <p>
+                <title>Exemplo de Título em Negrito</title>
+
+                <body>
+                    <h1><strong>Comunidade🤗</strong></h1>
+                </body>
+                
+                <p> Você não está sozinho(a)! 🤗🤗🤗</p>
+                <p>Este espaço é de uma comunidade (fórum) onde você pode criar e postar tópicos, para que os outros internautas inscritos na plataforma interajam com você, de forma a trocar ideias, experiências, compartilhar emoções e oferecer suporte mútuo nesta jornada que pede grande resiliência para, juntos, todos reescreverem suas vidas e histórias... Venha participar! </p>
+       
+
+
+        <!-- Conteúdo da página aqui -->
+        <section id="categoria1">
+         <h2>Categoria 1: Troca de Experiências</h2>
+        <!-- Tópicos de discussão relacionados à troca de experiências -->
+        </section>
+
+        <section id="categoria2">
+         <h2>Categoria 2: Recursos e Apoio</h2>
+        <!-- Tópicos de discussão relacionados a recursos e apoio disponíveis -->
+        </section>
+
+        <!-- Adicione mais seções conforme necessário -->
+        <article>
+            <h3>Post:</h3>
+            
+            <div class="novoPost" id="novoPost">
+    <textarea class="textInput" placeholder="Escreva aqui seu texto, clique Enter para enviar"></textarea>
+        </div>
+
+    <!-- Formulário para comentários ou respostas -->
+            <form>
+            <label for="comentario">Deixe um comentário:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+        </article>
+
+<!-- Adicione mais tópicos conforme necessário -->
+
+        
+        
+    </body>
+</html>

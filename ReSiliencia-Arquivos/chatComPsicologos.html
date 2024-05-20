@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica,sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #C8E1F7;
+        }
+        .header {
+            width: 100%;
+            background-color: #ADD8E6;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            height: 110px;
+        }
+        .main-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #7FABD4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar a {
+            display: block;
+            color: #000;
+            padding: 5px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background-color: #7FABD4;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #C8E1F7;
+            padding: 25px;
+            margin-left: 1px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpeg" alt="Logomarca do Site">
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <a href="index.html">Página Inicial</a>
+            <a href="chatComPsicologos.html">Chat com Psicólogo(a)</a>
+            <a href="videosETextosEducativos.html">Vídeos e Textos Educativos</a>
+            <a href="ferramentasParaAutogerenciamentoEmocional.html">Autogerenciamento Emocional</a>
+            <a href="comunidade.html">Comunidade</a>
+            <a href="clubeDoNeurodivergente.html">Clube do Neurodivergente</a>
+            <a href="telaLogin.html">Sair</a>
+        </div>
+        <div class="content">
+                <title>Exemplo de Título em Negrito</title>
+
+                <body>
+                    <h1><strong>Chat com Psicólogos</strong></h1>
+    <!-- ou -->
+    <!-- <h1><b>Chat com Psicólogos</b></h1> -->
+                </body>
+            <p> Aqui você pode se conectar a um Psicólogo de plantão por meio de um chat 24 horas. Basta iniciar a conversa que um dos psicólogos cadastrados na plataforma irá conectar com você! </p>
+             
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Iniciar Chat</title>
+    <style>
+        /* Estilos para a barra de título */
+        .chatHeader {
+            background-color: dodgerblue; /* Cor da barra de título */
+            color: #fff; /* Cor do texto na barra de título */
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            cursor: move; /* Altera o cursor para mover quando a barra de título é arrastada */
+        }
+
+        /* Estilos para a borda superior azul */
+        #chatWindow {
+            display: none;
+            position: fixed;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para o botão de fechar */
+        .closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chatWindow">
+        <div class="chatHeader">
+            Chat com Psicólogo
+            <span class="closeButton" onclick="closeChat()">X</span>
+        </div>
+        <!-- Conteúdo do chat aqui -->
+        
+        <div class="chatContent" id="chatContent">
+    <textarea class="textInput" placeholder="Digite sua mensagem aqui...!"></textarea>
+</div>
+
+    </div>
+
+    <script>
+        function closeChat() {
+            document.getElementById("chatWindow").style.display = "none";
+        }
+
+        document.getElementById("startChatButton").addEventListener("click", function() {
+            document.getElementById("chatWindow").style.display = "block";
+        });
+    </script>
+</head>
+<body>
+    <button id="startChatButton">Iniciar Chat</button>
+    <div id="chatWindow">
+        <h2>Chat com Psicólogo</h2>
+        <h5> Digite algo...</h5>
+        <!-- Conteúdo do chat aqui -->
+    </div>
+
+    <script>
+        document.getElementById("startChatButton").addEventListener("click", function() {
+            document.getElementById("chatWindow").style.display = "block";
+        });
+    </script>
+
+            
+        </div>
+    </body>
+</html>

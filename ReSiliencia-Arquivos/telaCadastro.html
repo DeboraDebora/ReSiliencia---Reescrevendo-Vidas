@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ADD8E6;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #F0F8FF;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="file"] {
+        margin-bottom: 10px;
+    }
+    button {
+        background-color: #428bca;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1><strong>Vamos começar?</strong></h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="foto">Foto (opcional):</label>
+        <input type="file" id="foto" name="foto">
+        <p>
+        <label for="nome">Nome:</label>
+        </p>     
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="tipo">Você é:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecione...</option>
+            <option value="paciente">Paciente</option>
+            <option value="psicologo">Psicólogo</option>
+        </select>
+
+        <label for="sobre">Sobre Mim:</label>
+        <textarea id="sobre" name="sobre" rows="4"></textarea>
+
+        <label for="contato">Email ou Telefone de Contato:</label>
+        <input type="text" id="contato" name="contato" required>
+
+        <button type="submit">Cadastrar</button>
+        
+</div>
+</body>
+</html>
